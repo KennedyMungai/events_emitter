@@ -17,8 +17,3 @@ const logEvents = async (message) => {
         console.error(err)
     }
 }
-
-
-// console.log(moment(new Date()).format('LLLL'))
-
-// console.log(uuid())
