@@ -6,7 +6,13 @@ const fs = require('fs')
 const fsPromises = require('fs').promises
 const path = require('path')
 
+const logEvents = async (message) => {
+    const dateTime = `${moment(new Date()).format('LLLL')}`
+    const logItem = `${dateTime}\t${uuid()}\t${message}\n`
+    console.log(logItem)
+}
 
-console.log(moment(new Date()).format('LLLL'))
 
-console.log(uuid())
+// console.log(moment(new Date()).format('LLLL'))
+
+// console.log(uuid())
